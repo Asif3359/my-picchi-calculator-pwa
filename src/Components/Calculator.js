@@ -87,7 +87,7 @@ const Calculator = () => {
             {currentOperation} {displayValue} 
         </div>
         <div className="buttons  flex justify-between items-start gap-1">
-          <div className='grid grid-cols-3 gap-1 w-3/5 '>
+          <div className='grid grid-cols-3 gap-1 w-3/4 '>
                 {
                     [ 9, 8, 7, 6, 5, 4, 3, 2, 1,0].map((number) => (
                         <button className='btn btn-accent w-full  text-white' key={number} onClick={() => handleNumberClick(number)}>
@@ -98,7 +98,7 @@ const Calculator = () => {
                     <button className='btn btn-accent w-full  text-white'onClick={() => handleDecimalClick()}>.</button>
                     <button className='btn btn-accent w-full   text-white'onClick={() => handleEqualsClick()}>=</button>
           </div>
-          <div className=' grid gap-1 w-2/5'>
+          <div className=' grid gap-1 w-1/4'>
             <button className='btn btn-accent w-full col-span-2  text-white'onClick={() => handleOperatorClick('+')}>+</button>
             <button className='btn btn-accent w-full col-span-2 text-white'onClick={() => handleOperatorClick('-')}>-</button>
             <button className='btn btn-accent w-full  text-white'onClick={() => handleOperatorClick('*')}>*</button>

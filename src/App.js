@@ -5,7 +5,7 @@ import Calculator from './Components/Calculator';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App flex justify-center items-center w-full h-[100vh] clear-left container mx-auto px-4">
   <Calculator></Calculator>
     </div>
   );
